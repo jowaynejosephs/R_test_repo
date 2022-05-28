@@ -168,8 +168,18 @@ pre code {
 </div>
 
 
-<p>Data_Cars &lt;- mtcars</p>
-<p>print(rownames(Data_Cars))</p>
+<pre class="r"><code>library(readr)
+data &lt;- read_csv(&quot;~/Desktop/data.csv&quot;)</code></pre>
+<pre><code>## Rows: 7 Columns: 6</code></pre>
+<pre><code>## ── Column specification ────────────────────────────────────────────────────────
+## Delimiter: &quot;,&quot;
+## dbl (6): Duration, Average_Pulse, Max_Pulse, Calorie_Burnage, Hours_Work, Ho...</code></pre>
+<pre><code>## 
+## ℹ Use `spec()` to retrieve the full column specification for this data.
+## ℹ Specify the column types or set `show_col_types = FALSE` to quiet this message.</code></pre>
+<pre class="r"><code>colnames(data)</code></pre>
+<pre><code>## [1] &quot;Duration&quot;        &quot;Average_Pulse&quot;   &quot;Max_Pulse&quot;       &quot;Calorie_Burnage&quot;
+## [5] &quot;Hours_Work&quot;      &quot;Hours_Sleep&quot;</code></pre>
 
 
 
